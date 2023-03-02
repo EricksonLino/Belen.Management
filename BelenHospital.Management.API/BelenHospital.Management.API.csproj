@@ -16,10 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\BelenHospital.Management.Application\BelenHospital.Management.Application.csproj" />
   </ItemGroup>
 
