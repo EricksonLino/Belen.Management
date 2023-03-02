@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
-using BelenHospital.Management.Application.Dtos;
+using BelenHospital.Management.Application.Dtos.PatientDto;
+using BelenHospital.Management.Application.Dtos.SpecialtyDto;
 using BelenHospital.Management.Entity;
 
 namespace BelenHospital.Management.Application.Profiles

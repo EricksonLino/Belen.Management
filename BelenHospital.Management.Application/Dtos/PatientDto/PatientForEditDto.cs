@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BelenHospital.Management.Application.Dtos
+namespace BelenHospital.Management.Application.Dtos.PatientDto
 {
     public class PatientForEditDto
     {

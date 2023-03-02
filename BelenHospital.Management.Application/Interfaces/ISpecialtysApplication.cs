@@ -1,4 +1,4 @@
-﻿using BelenHospital.Management.Application.Dtos;
+﻿using BelenHospital.Management.Application.Dtos.SpecialtyDto;
 
 namespace BelenHospital.Management.Application.Interfaces
 {

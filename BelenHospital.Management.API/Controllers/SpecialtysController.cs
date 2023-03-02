@@ -1,4 +1,4 @@
-﻿using BelenHospital.Management.Application.Dtos;
+﻿using BelenHospital.Management.Application.Dtos.SpecialtyDto;
 using BelenHospital.Management.Application.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 

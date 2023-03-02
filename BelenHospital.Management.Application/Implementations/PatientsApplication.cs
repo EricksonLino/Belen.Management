@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using BelenHospital.Management.Application.Dtos;
+using BelenHospital.Management.Application.Dtos.PatientDto;
 using BelenHospital.Management.Application.Interfaces;
 using BelenHospital.Management.Entity;
 using BelenHospital.Management.Repository.Interfaces;

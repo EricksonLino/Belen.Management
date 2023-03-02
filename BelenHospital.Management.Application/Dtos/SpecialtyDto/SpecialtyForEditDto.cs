@@ -1,4 +1,4 @@
-﻿namespace BelenHospital.Management.Application.Dtos
+﻿namespace BelenHospital.Management.Application.Dtos.SpecialtyDto
 {
     public class SpecialtyForEditDto
     {
