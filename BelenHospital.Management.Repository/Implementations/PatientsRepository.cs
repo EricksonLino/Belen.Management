@@ -22,6 +22,10 @@ namespace BelenHospital.Management.Repository.Implementations
             return patient;
         }
 
-        
+        public async Task InsertPatient(Patient patient)
+        {
+            context.Patients.Add(patient);
+            await context.SaveChangesAsync();
+        }
     }
 }

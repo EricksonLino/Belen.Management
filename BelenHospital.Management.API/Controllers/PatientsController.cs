@@ -29,5 +29,12 @@ namespace BelenHospital.Management.API.Controllers
             var patient = await patientsApplication.GetPatient(id);
             return patient;
         }
+
+        [HttpPost]
+        public async Task<ActionResult> Insert([FromBody] PatientForCreateDto patientForCreateDto)
+        {
+            await patientsApplication.InsertPatient(patientForCreateDto);
+            return Ok();
+        }
     }
 }
