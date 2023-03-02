@@ -38,5 +38,13 @@ namespace BelenHospital.Management.Application.Implementations
             await specialtysRepository.InsertSpecialty(specialtyEntity);
 
         }
+
+        public async Task UpdateSpecialty(int id, SpecialtyForEditDto specialtyForEditDto)
+        {
+            var specialtyEntity = await specialtysRepository.GetSpecialty(id);
+            mapper.Map(specialtyForEditDto, specialtyEntity);
+
+            await specialtysRepository.UpdateSpecialty(specialtyEntity);
+        }
     }
 }
