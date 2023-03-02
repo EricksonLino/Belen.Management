@@ -8,5 +8,6 @@ namespace BelenHospital.Management.Repository.Interfaces
         Task<Patient> GetPatient(int id);
         Task InsertPatient(Patient patient);
         Task UpdatePatient(Patient patient);
+        Task DeletePatient(Patient patient);
     }
 }

@@ -42,5 +42,12 @@ namespace BelenHospital.Management.API.Controllers
             await specialtysApplication.UpdateSpecialty(id, specialtyForEditDto);
             return Ok();
         }
+
+        [HttpDelete("{id:int}")]
+        public async Task<ActionResult> Delete(int id)
+        {
+            await specialtysApplication.DeleteSpecialty(id);
+            return Ok();
+        }
     }
 }

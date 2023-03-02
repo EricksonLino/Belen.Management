@@ -34,5 +34,13 @@ namespace BelenHospital.Management.Repository.Implementations
             context.Specialtys.Update(specialty);
             await context.SaveChangesAsync();
         }
+
+        public async Task DeleteSpecialty(Specialty specialty)
+        {
+            context.Specialtys.Remove(specialty);
+            await context.SaveChangesAsync();
+
+
+        }
     }
 }

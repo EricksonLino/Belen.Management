@@ -33,5 +33,11 @@ namespace BelenHospital.Management.Repository.Implementations
             context.Patients.Update(patient);
             await context.SaveChangesAsync();
         }
+
+        public async Task DeletePatient(Patient patient)
+        {
+            context.Patients.Remove(patient);
+            await context.SaveChangesAsync();
+        }
     }
 }

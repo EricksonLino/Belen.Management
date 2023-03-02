@@ -43,5 +43,12 @@ namespace BelenHospital.Management.API.Controllers
             await patientsApplication.UpdatePatient(id, patientForEditDto);
             return Ok();
         }
+
+        [HttpDelete("{id:int}")]
+        public async Task<ActionResult> Delete(int id)
+        {
+            await patientsApplication.DeletePatient(id);
+            return Ok();
+        }
     }
 }

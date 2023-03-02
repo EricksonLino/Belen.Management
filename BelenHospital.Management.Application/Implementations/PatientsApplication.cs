@@ -45,5 +45,11 @@ namespace BelenHospital.Management.Application.Implementations
 
             await patientsRepository.UpdatePatient(patientEntity);
         }
+
+        public async Task DeletePatient(int id)
+        {
+            var patientEntity = await patientsRepository.GetPatient(id);
+            await patientsRepository.DeletePatient(patientEntity);
+        }
     }
 }

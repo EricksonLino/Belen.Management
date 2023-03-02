@@ -8,5 +8,6 @@ namespace BelenHospital.Management.Repository.Interfaces
         Task<Specialty> GetSpecialty(int id);
         Task InsertSpecialty(Specialty specialty);
         Task UpdateSpecialty(Specialty specialty);
+        Task DeleteSpecialty(Specialty specialty);
     }
 }

@@ -8,5 +8,6 @@ namespace BelenHospital.Management.Application.Interfaces
         Task<PatientDetailDto> GetPatient(int id);
         Task InsertPatient(PatientForCreateDto patientForCreateDto);
         Task UpdatePatient(int id, PatientForEditDto patientForEditDto);
+        Task DeletePatient(int id);
     }
 }
