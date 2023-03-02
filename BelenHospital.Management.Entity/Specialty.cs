@@ -2,7 +2,7 @@
 
 namespace BelenHospital.Management.Entity
 {
-    public class Specilty
+    public class Specialty
     {
         [Key]
         public int Id { get; set; }
