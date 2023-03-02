@@ -7,5 +7,6 @@ namespace BelenHospital.Management.Repository.Interfaces
         Task<List<Patient>> GetPatients();
         Task<Patient> GetPatient(int id);
         Task InsertPatient(Patient patient);
+        Task UpdatePatient(Patient patient);
     }
 }

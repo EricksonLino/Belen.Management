@@ -11,6 +11,7 @@ namespace BelenHospital.Management.Application.Profiles
             CreateMap<Patient, PatientForListDto>();
             CreateMap<Patient, PatientDetailDto>();
             CreateMap<PatientForCreateDto, Patient>().ReverseMap();
+            CreateMap<PatientForEditDto, Patient>().ReverseMap();
 
             CreateMap<Specialty, SpecialtyForListDto>();
             CreateMap<Specialty, SpecialtyDetailDto>();

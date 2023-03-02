@@ -37,5 +37,13 @@ namespace BelenHospital.Management.Application.Implementations
             var patientEntity = mapper.Map<Patient>(patientForCreateDto);
             await patientsRepository.InsertPatient(patientEntity);
         }
+
+        public async Task UpdatePatient(int id, PatientForEditDto patientForEditDto)
+        {
+            var patientEntity = await patientsRepository.GetPatient(id);
+            mapper.Map(patientForEditDto, patientEntity);
+
+            await patientsRepository.UpdatePatient(patientEntity);
+        }
     }
 }
