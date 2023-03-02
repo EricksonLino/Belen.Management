@@ -14,6 +14,7 @@ namespace BelenHospital.Management.Application.Profiles
 
             CreateMap<Specialty, SpecialtyForListDto>();
             CreateMap<Specialty, SpecialtyDetailDto>();
+            CreateMap<SpecialtyForCreateDto, Specialty>().ReverseMap();
         }
     }
 }

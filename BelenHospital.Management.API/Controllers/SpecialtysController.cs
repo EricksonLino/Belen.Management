@@ -28,5 +28,12 @@ namespace BelenHospital.Management.API.Controllers
             var specialty = await specialtysApplication.GetSpecialty(id);
             return specialty;
         }
+
+        [HttpPost]
+        public async Task<ActionResult> Insert([FromBody] SpecialtyForCreateDto specialtyForCreateDto)
+        {
+            await specialtysApplication.InsertSpecialty(specialtyForCreateDto);
+            return Ok();
+        }
     }
 }

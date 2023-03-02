@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using BelenHospital.Management.Application.Dtos;
 using BelenHospital.Management.Application.Interfaces;
+using BelenHospital.Management.Entity;
 using BelenHospital.Management.Repository.Interfaces;
 
 namespace BelenHospital.Management.Application.Implementations
@@ -30,6 +31,12 @@ namespace BelenHospital.Management.Application.Implementations
             return specialtyDto;
         }
 
-        
+        public async Task InsertSpecialty(SpecialtyForCreateDto specialtyForCreateDto)
+        {
+            var specialtyEntity = mapper.Map<Specialty>(specialtyForCreateDto);
+
+            await specialtysRepository.InsertSpecialty(specialtyEntity);
+
+        }
     }
 }

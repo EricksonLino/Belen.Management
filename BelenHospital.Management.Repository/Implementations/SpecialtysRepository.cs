@@ -23,6 +23,10 @@ namespace BelenHospital.Management.Repository.Implementations
             return specialty;
         }
 
-        
+        public async Task InsertSpecialty(Specialty specialty)
+        {
+            context.Specialtys.Add(specialty);
+            await context.SaveChangesAsync();
+        }
     }
 }
