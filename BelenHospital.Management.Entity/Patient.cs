@@ -18,7 +18,8 @@ namespace BelenHospital.Management.Entity
         [Required]
         [StringLength(50)]
         public string LastName { get; set; }
-        public string Sex { get; set; }
+        [Required]
+        public bool Sex { get; set; }
         public DateTime Birthdate { get; set; }
         [Required]
         public string InsuranceCompany { get; set; }
